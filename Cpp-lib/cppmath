@@ -1,0 +1,35 @@
+#ifndef CPPMATH
+#define CPPMATH
+
+#include <stdlib.h>
+
+// #define MIN8  0x80
+// #define MIN16 0x8000
+// #define MIN32 0x80000000
+// #define MIN64 0x8000000000000000
+
+// #define MAX8    0x7f
+// #define MAX16   0x7fff
+// #define MAX32   0x7fffffff
+// #define MAX64   0x7fffffffffffffff
+
+#define max(a, b) __max(a, b)
+#define min(a, b) __min(a, b)
+
+namespace integer
+{
+template <typename T>
+bool divby2(T a);
+
+template <typename T>
+bool divby3(T a);
+
+template <typename T>
+bool iseven(T a);
+
+template <typename T>
+bool isodd(T a);
+
+} // namespace integer
+
+#endif // header guard
